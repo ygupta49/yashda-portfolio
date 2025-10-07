@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yashda Gupta — Data Analyst Portfolio</title>
+  <meta name="description" content="Turning messy data into clear decisions — analytics, visualization, and ML that ship.">
+  <meta property="og:title" content="Yashda Gupta — Data Analyst Portfolio">
+  <meta property="og:description" content="Turning messy data into clear decisions — analytics, visualization, and ML that ship.">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      --bg: #fff0f6;           /* light pink background */
+      --text: #1f2937;         /* gray-800 */
+      --muted: #6b7280;        /* gray-500 */
+      --brand: #ec4899;        /* pink-500 */
+      --brand2:#a78bfa;        /* purple-400 */
+      --card: #ffffff;
+      --shadow: 0 8px 24px rgba(0,0,0,.08);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; }
+    body { background: var(--bg); color: var(--text); }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #f9a8d4 0%, #c4b5fd 100%); /* light pink -> purple */
+      color: white;
+      padding: 72px 0 56px;
+      text-align: center;
+    }
+    .avatar {
+      width: 120px; height: 120px; border-radius: 999px; margin: 0 auto 16px;
+      background: white; display: grid; place-items: center; color: var(--brand);
+      font-weight: 800; font-size: 36px; box-shadow: var(--shadow);
+    }
+    .hero h1 { margin: 8px 0; font-size: clamp(28px, 5vw, 40px); }
+    .hero p.tagline { opacity: .95; max-width: 720px; margin: 12px auto 24px; font-size: clamp(16px, 3vw, 20px); }
+    .cta { display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .btn {
+      display:inline-block; padding: 12px 18px; border-radius: 12px; font-weight: 600; border:2px solid white; color:white;
+    }
+    .btn.fill { background:white; color:#be185d; border-color:white; }
+    .btn:hover { filter: brightness(1.05); }
+    /* NAV */
+    .tabs { background: white; margin-top: -24px; border-radius: var(--radius); padding: 8px; box-shadow: var(--shadow); display:flex; gap:8px; justify-content:center; flex-wrap:wrap; }
+    .tab {
+      padding: 10px 14px; border-radius: 10px; color:#374151; font-weight:600;
+    }
+    .tab.active, .tab:hover { background:#fee2e2; color:#be185d; }
+    /* SECTIONS */
+    section { padding: 28px 0; }
+    .card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; }
+    .grid { display:grid; gap:16px; }
+    @media (min-width: 768px) { .grid.two { grid-template-columns: repeat(2, minmax(0,1fr)); } .grid.three { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+    /* SKILLS */
+    .skill { margin-bottom: 12px; }
+    .skill .row { display:flex; justify-content: space-between; margin-bottom: 6px; font-size:14px; color:#374151; }
+    .bar { height:10px; background:#e5e7eb; border-radius: 999px; overflow:hidden; }
+    .bar > span { display:block; height:100%; background: linear-gradient(90deg, var(--brand), var(--brand2)); }
+    /* FOOTER */
+    footer { background:#2e1065; color:white; text-align:center; padding: 36px 0; margin-top: 24px; }
+    footer a { color:#fbcfe8; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="avatar" aria-hidden="true">YG</div>
+      <h1>Yashda Gupta</h1>
+      <p><strong>Data Analyst · Math &amp; Stats @ UTM</strong></p>
+      <p class="tagline">turning messy data into clear decisions — analytics, visualization, and ML that ship</p>
+      <div class="cta">
+        <a class="btn fill" href="mailto:yashda.gupta@mail.utoronto.ca">Email Me</a>
+        <a class="btn" href="Yashda_Resume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container" style="margin-top: 12px;">
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <a class="tab active" data-target="#about" href="#about" role="tab" aria-selected="true">About</a>
+      <a class="tab" data-target="#skills" href="#skills" role="tab">Skills</a>
+      <a class="tab" data-target="#projects" href="#projects" role="tab">Projects</a>
+      <a class="tab" data-target="#experience" href="#experience" role="tab">Experience</a>
+      <a class="tab" data-target="#education" href="#education" role="tab">Education</a>
+      <a class="tab" data-target="#contact" href="#contact" role="tab">Contact</a>
+    </nav>
+
+    <main>
+      <section id="about">
+        <div class="card">
+          <h2>About Me</h2>
+          <p>Hi! I’m Yashda, a data analyst who loves building usable pipelines and crisp visualizations. I’m finishing my Honours BSc in Math &amp; Stats at UTM and interning on the HER Power Project at WMRCC Durham.</p>
+          <p>I care about clarity, reproducibility, and impact. Give me messy spreadsheets and ambiguous questions — I’ll return clean datasets, dashboards, and a short, sharp narrative that helps people decide.</p>
+          <p style="margin-top:8px">
+            <strong>Links:</strong>
+            <a href="https://www.linkedin.com/in/yashdagupta" target="_blank" rel="noopener">LinkedIn</a> ·
+            <a href="https://github.com/ygupta49" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="card">
+          <h2>Technical Skills</h2>
+          <div class="grid two">
+            <!-- Skill bars -->
+            <div class="skill"><div class="row"><span>Python</span><span>92%</span></div><div class="bar"><span style="width:92%"></span></div></div>
+            <div class="skill"><div class="row"><span>SQL</span><span>88%</span></div><div class="bar"><span style="width:88%"></span></div></div>
+            <div class="skill"><div class="row"><span>R</span><span>80%</span></div><div class="bar"><span style="width:80%"></span></div></div>
+            <div class="skill"><div class="row"><span>Tableau</span><span>88%</span></div><div class="bar"><span style="width:88%"></span></div></div>
+            <div class="skill"><div class="row"><span>Power BI</span><span>83%</span></div><div class="bar"><span style="width:83%"></span></div></div>
+            <div class="skill"><div class="row"><span>Excel</span><span>95%</span></div><div class="bar"><span style="width:95%"></span></div></div>
+            <div class="skill"><div class="row"><span>Statistics</span><span>87%</span></div><div class="bar"><span style="width:87%"></span></div></div>
+            <div class="skill"><div class="row"><span>Machine Learning</span><span>76%</span></div><div class="bar"><span style="width:76%"></span></div></div>
+          </div>
+          <div style="margin-top:16px">
+            <h3>Certifications</h3>
+            <ul style="margin:6px 0 0 16px; color:#374151;">
+              <li>Bloomberg Market Concepts (BMC)</li>
+              <li>Tableau Desktop Specialist</li>
+              <li>AWS Cloud Practitioner (in progress)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 style="text-align:center; margin-bottom:12px;">Projects (Coming Soon)</h2>
+        <div class="grid three">
+          <div class="card">
+            <h3>Survey Analytics Dashboard</h3>
+            <p>Cleaning → EDA → insights. A dashboard showing how I turn raw survey responses into decisions.</p>
+            <p><em>Stack:</em> Python · Pandas · Tableau</p>
+            <p><a href="https://github.com/ygupta49" target="_blank" rel="noopener">View repo (coming soon)</a></p>
+          </div>
+          <div class="card">
+            <h3>Churn Prediction Case Study</h3>
+            <p>Binary classification end‑to‑end with evaluation and simple explainability.</p>
+            <p><em>Stack:</em> Python · scikit‑learn · SHAP</p>
+            <p><a href="https://github.com/ygupta49" target="_blank" rel="noopener">View repo (coming soon)</a></p>
+          </div>
+          <div class="card">
+            <h3>Finance KPI Explorer</h3>
+            <p>Interactive KPIs with drill‑downs; mock dataset to show workflow and storytelling.</p>
+            <p><em>Stack:</em> Excel · Power BI</p>
+            <p><a href="https://github.com/ygupta49" target="_blank" rel="noopener">View repo (coming soon)</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2 style="text-align:center; margin-bottom:12px;">Experience</h2>
+        <div class="container grid two" style="padding:0">
+          <div class="card">
+            <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start;">
+              <div>
+                <h3>Data Analyst Intern</h3>
+                <p style="color:#6b7280; font-weight:600;">WMRCC Durham (HER Power Project)</p>
+              </div>
+              <span style="color:#6b7280;">2025 – Present</span>
+            </div>
+            <ul style="margin:8px 0 0 18px;">
+              <li>Designed survey with inclusive features (alt text, captions), built cleaning/EDA scripts</li>
+              <li>Published dashboards; recommended changes to outreach and program design</li>
+              <li>Documented data standards and QA checks</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start;">
+              <div>
+                <h3>VP, General &amp; Computational Sciences</h3>
+                <p style="color:#6b7280; font-weight:600;">Women in Science &amp; Computing (WiSC UTM)</p>
+              </div>
+              <span style="color:#6b7280;">2025 – 2026</span>
+            </div>
+            <ul style="margin:8px 0 0 18px;">
+              <li>Led event analytics and operational dashboards</li>
+              <li>Mentored associates; shipped templates for content planning</li>
+              <li>Prioritized data‑informed programming</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start;">
+              <div>
+                <h3>Finance/Sponsorship Associate</h3>
+                <p style="color:#6b7280; font-weight:600;">MCSS UTM · DeerHacks Hackathon</p>
+              </div>
+              <span style="color:#6b7280;">2025 – 2026</span>
+            </div>
+            <ul style="margin:8px 0 0 18px;">
+              <li>Maintained sponsorship CRM, refreshed sponsor package</li>
+              <li>Tracked conversion metrics and tier benefits</li>
+              <li>Aligned budget with programming goals</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="card">
+          <h2>Education</h2>
+          <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start;">
+            <div>
+              <h3>Honours BSc, Mathematics &amp; Statistics (Minor in English)</h3>
+              <p style="color:#6b7280; font-weight:600;">University of Toronto Mississauga</p>
+            </div>
+            <span style="color:#6b7280;">2022 – 2026 (expected)</span>
+          </div>
+          <ul style="margin:8px 0 0 18px;">
+            <li>Probability &amp; Statistics, Regression, Sampling, ODEs, Vector Calculus</li>
+            <li>Projects: statistical modeling, dashboards, survey methods</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="card">
+          <h2>Contact</h2>
+          <p>Prefer email? <a href="mailto:yashda.gupta@mail.utoronto.ca">yashda.gupta@mail.utoronto.ca</a></p>
+          <p>Or use this form. To enable submissions without a backend, create a free form at Formspree and replace <code>FORM_ID_HERE</code> below.</p>
+          <form action="https://formspree.io/f/FORM_ID_HERE" method="POST" class="grid" style="gap:12px; max-width:520px;">
+            <input name="name" placeholder="Your name" required aria-label="Your name" style="padding:12px; border:1px solid #e5e7eb; border-radius:10px;">
+            <input type="email" name="email" placeholder="Your email" required aria-label="Your email" style="padding:12px; border:1px solid #e5e7eb; border-radius:10px;">
+            <textarea name="message" rows="5" placeholder="Your message" required aria-label="Your message" style="padding:12px; border:1px solid #e5e7eb; border-radius:10px;"></textarea>
+            <button type="submit" style="padding:12px 18px; border-radius:10px; font-weight:700; background: linear-gradient(135deg, var(--brand), var(--brand2)); color:white; border:none;">Send</button>
+          </form>
+          <p style="font-size:12px; color:#6b7280; margin-top:8px;">Note: the form works after you replace <code>FORM_ID_HERE</code> with your Formspree ID.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="container">
+      <h3>Let’s connect</h3>
+      <p><a href="https://www.linkedin.com/in/yashdagupta" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/ygupta49" target="_blank" rel="noopener">GitHub</a> · <a href="mailto:yashda.gupta@mail.utoronto.ca">Email</a></p>
+      <p style="opacity:.85;">© 2025 Yashda Gupta. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple tab toggling
+    const tabs = document.querySelectorAll('.tab');
+    const sections = document.querySelectorAll('main section');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        // make clicked tab active
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        // show target section
+        const id = tab.getAttribute('data-target');
+        sections.forEach(sec => sec.style.display = (sec.id === id.slice(1)) ? 'block' : 'none');
+      });
+    });
+    // Start with only the first section visible
+    sections.forEach((sec, i) => sec.style.display = i === 0 ? 'block' : 'none');
+  </script>
+</body>
+</html>
